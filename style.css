@@ -1,0 +1,380 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    border-collapse: collapse;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.contents1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents2 {
+    font-size: 24px;
+    font-weight: medium;
+    color: black;
+}
+
+
+.intro {
+    background-image: url("imsi.png"); 
+    background-size: cover;
+    /* background-color: rgb(40, 75, 135); */ 
+    width: 100%;
+    height: 618px;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 86px;
+    background: white;
+    z-index: 999;
+}
+
+.searcharea {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 40px;  
+    background: rgba(40, 75, 135, 0.3);
+    border-radius: 5px;
+    margin-top: 24px;
+    margin-left: 70px;
+}
+
+.searcharea > form > input{
+    border: none;
+    height: 40px;
+    width: 250px;
+    color: #fff;
+    padding-left: 10px;
+    background: rgba(0,0,0,0.0);
+}
+
+.searcharea > form > span{
+    width: 50px; 
+    color: rgb(40, 75, 135);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+}
+
+.nav > li{
+    margin-left: 40px;
+}
+
+.nav > li > a {
+    color: rgb(40, 75, 135);
+    user-select: none;
+}
+
+.intro-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-text > div > h1,
+.intro-text > div > h4 {
+    color: white;
+}
+
+.intro-text > .last { 
+    padding-top: 233px;
+}
+/* intro ended here */
+
+
+.amount {
+    position: relative;
+    top: -66px;
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.amount > li {
+    flex: 1;
+    height: 132px;
+}
+
+.amount > li:not(:last-child) > div{
+    border-right: 1px solid #e1e1e1;
+}
+
+.amount > li > div {
+    text-align: center;
+    margin-top: 37px;
+    height: 57px;
+}
+
+/* amount ended */ 
+
+
+.about-page {
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+
+.about-page > h1 {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    margin: auto;
+    width: 1280px;
+    
+}
+
+.icons > li {
+    text-align: center;
+    flex: 1;
+    margin-top: 49px;
+    height: 301px;
+    background: #fff;
+    
+}
+
+.icons > li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.icons > li > div > img {
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+.icons > li > .contents1{
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    
+}
+
+.more {
+    background: #2f7AF4;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+/* about page ended */ 
+
+
+.service_page {
+    width: 100%;
+    height: 550px;
+    background: white;
+}
+
+.service_page > h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.service_page > .contents1 {
+    margin-top: -20px;
+    text-align: center;
+}
+
+.service_page1 {
+    width: 870px; 
+    display: flex;
+    margin: 40px auto;
+    height: 350px;
+}
+
+.service_page1 > .contents1 {
+    padding-left: 20px;
+}
+
+.logo_image {
+    width: 500px;
+    height: 350px;
+}
+
+.service_page1 > .contents1 > p {
+    margin-top: 30px;
+    width: 350px;
+}
+
+
+.service_page2 {
+    width: 970px; 
+    display: flex;
+    margin: 50px auto;
+    height: 350px;
+    background: white;
+}
+
+.service_page2 > .contents1  {
+    width: 350px;
+    margin-left: 140px;
+}
+
+.direction_img {
+    padding-left: 70px;
+    width: 350px;
+    height: 350px;
+}
+
+.blank {
+    height: 450px;
+    width: 100%;
+}
+
+/* service-page ends */ 
+
+.menu-page {
+    width: 100%;
+    text-align: center;
+    background: #f1f2f3;
+    height: 2500px;
+}
+
+.menu-page > .menu-h1 {
+    padding-top: 50px;
+}
+
+.menu-page > .contents10 {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.menu-page .name {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+.menu-page .contents2 {
+    margin-bottom: 10px;
+}
+
+.description .contents1{
+    margin-top: 70px;
+    height: 100px;
+}
+
+/* menu-page ends */
+
+.contacts-page {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: #262626;
+    text-align: center;
+}
+
+.contacts-page .footer-logo {
+    padding-top: 40px;
+}
+
+.contacts-page .footer-p {
+    color: #6c6c6c; 
+    padding-top: 25px;
+    user-select: none;
+}
+
+.cafe {
+    margin-bottom: 20px;
+}
+
+.cafe h1 {
+    color: #6c6c6c;
+    font-weight: bolder;
+}
+
+.copyright {
+    margin-top: 40px;
+    color: #6c6c6c;
+}
+
+
+/* Dropdown Button */
+.dropdown {
+    width: 100%;
+    height: 50px;
+    background: #262626;
+    border-bottom: #949393 solid 0.5px;
+}
+
+.dropdown p {
+    color: white;
+}
+
+.dropbtn {
+    background-color: rgb(40, 75, 135);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #b6b7b9;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1e2e3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #6c6c6c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  
+  .ddd {
+    margin-left: 80%;
+  }
