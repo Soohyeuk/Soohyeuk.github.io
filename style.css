@@ -75,7 +75,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
     line-height: 86px;
-    width: calc(1280px - 300px);
+    width: 70%;
 }
 
 .nav > li{
@@ -93,8 +93,7 @@ h1 {
     text-align: center;
 }
 
-.intro-text > div > h1,
-.intro-text > div > h4 {
+.intro-text > div > h1 {
     color: white;
 }
 
@@ -109,7 +108,7 @@ h1 {
     top: -66px;
     display: flex;
     justify-content: center;
-    width: 1280px;
+    width: 90%;
     background: white;
     margin: auto;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
