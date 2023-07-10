@@ -1,379 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Cafe Púrpura</title>
+    <link rel="stylesheet" href="proto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    color:black;
-    border-collapse: collapse;
-    font-family: 'Noto Sans KR', sans-serif;
-}
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="searcharea">
+                <form>
+                    <input type="search" id="searchInput" placeholder="Search">
+                    <span id="span">검색</span>
+                </form>
+            </div>
+            
+            <ul class="nav">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="#" id="about">ABOUT</a></li>
+                <li><a href="#" id="service">SERVICE</a></li>
+                <li><a href="#" id="menu">MENU</a></li>
+                <li><a href="#" id="contact">CONTACT</a></li>
+            </ul>
+        </div>
 
-h1 {
-    font-size: 48px;
-    font-weight: 400;
-}
+        <!-- intro begins -->
+        <div class="intro">
+            <div class="intro-text">
+                <div class="last">
+                    <h1 lang="es">Cafe Púrpura</h1>
+                </div>
+            </div> 
+        </div>
+        <!-- intro ends -->
+        
+        <!-- amount begins -->
+        <ul class="amount">
+            <li>
+                <div>
+                    <div class="contents1">커피&와인</div>
+                    <div class="contents2">둘 다 즐길 수 있는 공간</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">디저트 및 안주</div>
+                    <div class="contents2">컨텐츠</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">맥주</div>
+                    <div class="contents2">생맥주, 에일, 라거</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">널널한 주차 자리</div>
+                    <div class="contents2">6~8대의 주차 자리</div>
+                </div>
+            </li>
+        </ul>
+        <!-- amount ends -->
 
-.contents1 {
-    font-size: 20px;
-    font-weight: lighter;
-}
+        <!-- about-page starts-->
+        <div class="about-page"> 
+            <h1>ABOUT</h1>
 
-.contents2 {
-    font-size: 24px;
-    font-weight: medium;
-    color: black;
-}
+            <ul class="icons">
+                <li>
+                    <div class="image1">
+                        <img src="" alt="image1">
+                    </div>
+                    <div class="contents1">
+                        길게 길게 길게 쓴다면 무언가가 달라질까
+                    </div>
+                </li>
 
+                <li>
+                    <div class="image2">
+                        <img src="" alt="image2">
+                    </div>
+                    <div class="contents1">
+                        content
+                    </div>
+                    <div class="more">
+                        MORE
+                    </div>
+                </li>
 
-.intro {
-    background-image: url("imsi.png"); 
-    background-size: cover;
-    width: 100%;
-    height: 618px;
-}
-
-.header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 86px;
-    background: white;
-    z-index: 999;
-}
-
-.searcharea {
-    font-size: 1.1vw;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 21vw;
-    height: 40px;  
-    background: rgba(40, 75, 135, 0.3);
-    border-radius: 5px;
-    margin-top: 24px;
-    margin-left: 70px;
-}
-
-.searcharea > form > input{
-    border: none;
-    height: 40px;
-    width: 17vw;
-    color: #fff;
-    padding-left: 10px;
-    background: rgba(0,0,0,0.0);
-}
-
-.searcharea > form > span{
-    color: rgb(40, 75, 135);
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0.7vw;
-   
-}
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 86px;
-    width: 70%;
-}
-
-.nav > li{
-    margin-left: 40px;
-}
-
-.nav > li > a {
-    color: rgb(40, 75, 135);
-    user-select: none;
-}
-
-.intro-text {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.intro-text > div > h1{
-    color: white;
-}
-
-.intro-text > .last { 
-    padding-top: 233px;
-}
-/* intro ended here */
-
-
-.amount {
-    position: relative;
-    top: -66px;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    background: white;
-    margin: auto;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-}
-
-.amount > li {
-    flex: 1;
-    height: 132px;
-}
-
-.amount > li:not(:last-child) > div{
-    border-right: 1px solid #e1e1e1;
-}
-
-.amount > li > div {
-    text-align: center;
-    margin-top: 37px;
-    height: 57px;
-}
-
-/* amount ended */ 
-
-
-.about-page {
-    width: 100%;
-    height: 601px;
-    margin-top: -132px;
-    background: #f1f2f3;
-}
-
-.about-page > h1 {
-    padding-top: 140px;
-    text-align: center;
-}
-
-.icons {
-    display: flex;
-    margin: auto;
-    width: 90%;
+                <li>
+                    <div class="image3">
+                        <img src="" alt="image3">
+                    </div>
+                    <div class="contents1">
+                        content
+                    </div>
+                </li>
     
-}
+            </ul>
+        </div>
+        <!-- about-page starts-->
 
-.icons > li {
-    text-align: center;
-    flex: 1;
-    margin-top: 49px;
-    height: 301px;
-    background: #fff;
-    
-}
+        <!-- service-page starts-->
+        <div class="service_page">
+            <h1>SERVICE</h1>
+            <div class="contents1">
+                <br> 월~토 10:30 ~ 22:00 OPEN 수요일 정기휴업
+                <br> 일요일  10:30 ~ 19:00 OPEN
+                <br> CONTACT: 064-784-2160
+            </div>
+            <div class="service_page1">
+                <div>
+                    <img src="배민로고.jpg" alt="배달의 민족 이미지" class="logo_image"> 
+                </div>
+                <div class="contents1">
+                    <h2 class="contents2">배달의 민족 배달 가능!!</h2>
+                    <p> 모든 상품 배달 가능(~~이유로  ~~상품들은 배달이 불가능 한 점 양해 부탁요) 제발 제발 많이 시켜주세요 제발 이만 그럼 수고요~~!</p>
+                    <br> 여기 여기 눌러서 이렇게 저렇게 시키면됨
+                </div>
+            </div>
 
-.icons > li:not(:last-child) {
-    margin-right: 20px;
-}
+            <div class="service_page2">
+                <div class="contents1">
+                    <h2 class="contents2">자유롭게 주차 가능</h2>
+                    <p> 6~8대 주차 가능한 주차장을 무료료 이용 가능합니다. 카페 뒤로 들어가시면 될껄요 아무 사진이나 ㅅㄱ </p>
+                </div>
+                <div>
+                    <img src="direction.png" alt="길찾기" class="direction_img"> 
+                </div>
+            </div>
+        </div>
+        <!-- service-page ends-->
+        <div class="blank"></div>
+        <!--menu-page starts-->
+        <div class="menu-page">
+            <h1 class="menu-h1">MENU</h1>
+            <h1 class="contents10" style="margin-bottom: 50px;">뽀르뽀라의 시그니처 메뉴</h1>
+            <ul>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">
+                            <h1 class="contents2">더치 크림라떼(ICE)</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>
+                            
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">   
+                            <h1 class="contents2">흑임자 더치 크림라떼(ICE)</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">
+                            <h1 class="contents2">아몬드 더치 크림라떼(ICE)</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>                   
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">
+                            <h1 class="contents2">블루 레몬 에이드</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">
+                            <h1 class="contents2">뽀르뽀라 아메리카노</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>                           
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">
+                        <div class="menu-image">
+                            <h1 class="contents2">뽀르뽀라 카페라떼</h1>
+                            <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="contents1">이것저것</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--menu-page ends-->
+    </div> 
 
-.icons > li > div > img {
-    margin-top: 36px;
-    margin-bottom: 40px;
-}
+    <script src="function.js"></script>
+</body>
 
-.icons > li > .contents1{
-    margin: auto;
-    width: 100px;
-    text-align: center;
-    
-}
-
-.more {
-    background: #2f7AF4;
-    width: 100px;
-    height: 30px;
-    margin: 10px auto;
-    line-height: 30px;
-    font-size: 12px;
-}
-
-/* about page ended */ 
-
-
-.service_page {
-    width: 100%;
-    height: 550px;
-    background: white;
-}
-
-.service_page > h1 {
-    padding-top: 50px;
-    text-align: center;
-}
-
-.service_page > .contents1 {
-    margin-top: -20px;
-    text-align: center;
-}
-
-.service_page1 {
-    width: 870px; 
-    display: flex;
-    margin: 40px auto;
-    height: 350px;
-}
-
-.service_page1 > .contents1 {
-    padding-left: 20px;
-}
-
-.logo_image {
-    width: 500px;
-    height: 350px;
-}
-
-.service_page1 > .contents1 > p {
-    margin-top: 30px;
-    width: 350px;
-}
-
-
-.service_page2 {
-    width: 970px; 
-    display: flex;
-    margin: 50px auto;
-    height: 350px;
-    background: white;
-}
-
-.service_page2 > .contents1  {
-    width: 350px;
-    margin-left: 140px;
-}
-
-.direction_img {
-    padding-left: 70px;
-    width: 350px;
-    height: 350px;
-}
-
-.blank {
-    height: 450px;
-    width: 100%;
-}
-
-/* service-page ends */ 
-
-.menu-page {
-    width: 100%;
-    text-align: center;
-    background: #f1f2f3;
-    height: 2500px;
-}
-
-.menu-page > .menu-h1 {
-    padding-top: 50px;
-}
-
-.menu-page > .contents10 {
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.menu-page .name {
-    width: 100%;
-    height: 200px;
-    margin: auto;
-}
-
-.menu-page .contents2 {
-    margin-bottom: 10px;
-}
-
-.description .contents1{
-    margin-top: 70px;
-    height: 100px;
-}
-
-/* menu-page ends */
-
-.contacts-page {
-    width: 100%;
-    height: 250px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background: #262626;
-    text-align: center;
-}
-
-.contacts-page .footer-logo {
-    padding-top: 40px;
-}
-
-.contacts-page .footer-p {
-    color: #6c6c6c; 
-    padding-top: 25px;
-    user-select: none;
-}
-
-.cafe {
-    margin-bottom: 20px;
-}
-
-.cafe h1 {
-    color: #6c6c6c;
-    font-weight: bolder;
-}
-
-.copyright {
-    margin-top: 40px;
-    color: #6c6c6c;
-}
-
-
-/* Dropdown Button */
-.dropdown {
-    width: 100%;
-    height: 50px;
-    background: #262626;
-    border-bottom: #949393 solid 0.5px;
-}
-
-.dropdown p {
-    color: white;
-}
-
-.dropbtn {
-    background-color: rgb(40, 75, 135);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #b6b7b9;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e1e2e3;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #6c6c6c;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-  
-  .ddd {
-    margin-left: 80%;
-  }
+<footer>
+    <div class="dropdown">
+        <div class="ddd">
+            <button onclick="myFunction()" class="dropbtn">
+                <p>한국어</p>   
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">English</a>
+              <a href="#">Chinese?</a>
+            </div>
+        </div>
+    </div>
+    <!--contacts-page starts-->
+    <div class="contacts-page">
+        <div class="footer-logo">
+            <!-- <img src="배민로고.jpg" alt="image1" style="width:300px ;" style="height:300px;"> -->
+        </div>
+        <div class="footer-p">
+            <div class="cafe">
+                <h1 lang="es">Cafe Púrpura</h1>
+            </div>
+            CEO. 김미녀 <br>
+            Addr. 제주도 서귀포시 온평관전로 94<br>
+            TEl. 064-784-2160 <br> <!-- maybe let it clipboard or straight to call-->
+            <div class="copyright">
+                © COPYRIGHT 2023. Cafe Púrpura. ALL RIGHT RESERVED.
+            </div>
+        </div>
+</footer>
+</html>
