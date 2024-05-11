@@ -97,18 +97,18 @@ $purpleColor: #F0F1FA;
 // -------------------------------------------//
 /* nav bar */
 .images {
-  width: 40px;
+  width: 60px;
 }
 
 .header__list {
   background-color: $themeColor;
-  height: 40px;
+  height: 60px;
   width: 100%;
   color: white;
   display: flex;
   justify-content: center;
   .header__list__container {
-    height: 40px;
+    height: 60px;
     width: 95%;
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ $purpleColor: #F0F1FA;
 .intro-bar {
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 96vh;
   background-color: $themeColor;
   color: $purpleColor;
 
@@ -143,7 +143,6 @@ $purpleColor: #F0F1FA;
       height: 50vh;
       img {
         @extend %btnTransition;
-        width: 25px;
         cursor: pointer;
       }
     }
@@ -162,17 +161,17 @@ $purpleColor: #F0F1FA;
 /* intro bar ends */ 
 // -------------------------------------------//
 /* about__me */ 
-.about__me {
+.name {
+  background-color: $purpleColor;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  .title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+}
+
+.about__me {
+  width: 100%;
+  display: flex;
   background-color: $purpleColor;
 }
 
@@ -184,7 +183,6 @@ $purpleColor: #F0F1FA;
   .portrait {
     box-shadow: 1px 1px 1px 1px rgba($color: #000000, $alpha: 0.3);
   }
-  padding-bottom: 27vh;
   .about__me__grid {
     display: grid;
     .grid__item {
@@ -216,7 +214,6 @@ $purpleColor: #F0F1FA;
 /*project */ 
 .project {
   width: 100%;
-  height: max-content;
   .title {
     display: flex;
     flex-direction: column;
@@ -231,6 +228,7 @@ $purpleColor: #F0F1FA;
   align-items: center;
   .project__list { 
     display: grid;
+    justify-content: center;
     padding: 0px 10px 0px 10px;
     row-gap: 30px;
     column-gap: 10px;
@@ -251,9 +249,6 @@ $purpleColor: #F0F1FA;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    img {
-      width: 40px;
-    }
   }
 
   h4 {
@@ -270,7 +265,6 @@ $purpleColor: #F0F1FA;
   align-items: center;
   width: 100%;
   height: 200px;
-  margin-top: 100px;
   background-color: $themeColor;
   color: $purpleColor;
 }
@@ -309,8 +303,7 @@ $purpleColor: #F0F1FA;
 @media screen and (min-width: 500px) {
   .desktop {
     display: flex;
-    column-gap: 30px;
-    column-gap: 30px;
+    column-gap: 50px;
     li {
       transition: transform 0.3s linear;
       &:hover {
@@ -318,7 +311,6 @@ $purpleColor: #F0F1FA;
         transform: translateY(-5px);
       }
       cursor: pointer;
-      font-size: 20px;
       &:hover {
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
@@ -331,37 +323,65 @@ $purpleColor: #F0F1FA;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+  .item, .project {
+    height: 100vh;
+  }
+  .desktop {
+      font-size: 20px;
+  }
+  .social-media {
+    img {
+      width: 40px;
+    }
+  }
   .about-me {
-    width: 35%;
+    width: 37%;
     padding-left: 10%;
     padding-bottom: 60px;
     h2 {
-        font-size: 60px;
+        font-size: 70px;
     }
     h4 {
-        font-size: 25px;
+        font-size: 30px;
     }
     p {
-        font-size: 13px;
+        font-size: 20px;
         width: 80%;
         padding-top: 20px;
     }
   }
+
+  #my-face {
+    img {
+      width: 500px;
+    }
+  }
+  .about__me {
+    height: 100vh;
+  }
   .about__me__grid {
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 220px);
     row-gap: 10px;
     column-gap: 10px;
   }
 
   .title { 
-    @include titleDesign(50px, 70px, 17px, 9px); 
+    @include titleDesign(50px, 0px, 30px, 15px); 
   }
+
   .project__list {
     grid-template-columns: repeat(3, 0.4fr);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-rows: repeat(2, 280px);
   }
+
+  .tech-stack {
+    img {
+      width: 40px;
+    }
+  }
+
   .front-end-content, .back-end-content {
     img {
       width: 40px;
@@ -384,56 +404,90 @@ $purpleColor: #F0F1FA;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+  .social-media {
+    img {
+        width: 35px;
+      }
+  }
   .about-me {
     width: 35%;
     padding-left: 8%;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
     h2 {
-        font-size: 50px;
+        font-size: 70px;
     }
     h4 {
         font-size: 20px;
     }
     p {
-        font-size: 13px;
+        font-size: 17px;
         width: 100%;
         padding-top: 20px;
     }
   }
   #my-face {
     img {
-      width: 300px;
+      width: 400px;
     }
   }
+
   .about__me__grid {
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 130px);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 220px);
     row-gap: 10px;
     column-gap: 10px;
   }
+
+  .title { 
+    @include titleDesign(50px, 0px, 30px, 15px); 
+  }
+
+  .project__list {
+    grid-template-columns: repeat(3, 0.4fr);
+    grid-template-rows: repeat(2, 280px);
+  }
   .small__title {
-    font-size: 13px;
+    font-size: 20px;
   }
   .paragraph {
-    font-size: 10px;
+    font-size: 17px;
   }
-
-  
 }
 
-@media screen and (max-width: 920px) {
-  .project__list {
-    grid-template-columns: repeat(2, 0.4fr);
-    grid-template-rows: repeat(3, 270px);
-    justify-content: center;
+@media screen and (max-width: 1024px) {
+  .about-me {
+    width: 35%;
+    padding-left: 8%;
+    padding-bottom: 60px;
+    h2 {
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+        width: 100%;
+        padding-top: 20px;
+    }
   }
-  .front-end-content, .back-end-content {
+  #my-face {
     img {
-      width: 20px;
+      width: 400px;
     }
   }
 
+  .project__list {
+    grid-template-columns: repeat(3, 0.4fr);
+    grid-template-rows: repeat(2, 280px);
+  }
+  .small__title {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 17px;
+  }
   .footer__container {
     .footer__img {
       img {
@@ -451,74 +505,59 @@ $purpleColor: #F0F1FA;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
+  .desktop {
+    column-gap: 20px;
+    font-size: 17px;
+  }
   .about-me {
-    width: 35%;
+    width: 40%;
     padding-left: 8%;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
     h2 {
         font-size: 50px;
     }
     h4 {
-        font-size: 20px;
+        font-size: 25px;
     }
     p {
-        font-size: 13px;
+        font-size: 15px;
         width: 100%;
         padding-top: 20px;
     }
   }
   #my-face {
     img {
-      width: 300px;
+      width: 330px;
     }
+  }
+  .title { 
+    @include titleDesign(50px, 0px, 20px, 10px); 
+  }
+
+  .about__me__grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 180px);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .project__list {
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-rows: repeat(3, 280px);
   }
   .small__title {
     font-size: 15px;
   }
   .paragraph {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
-@media screen and (max-width: 674px) {
-  .about-me {
-    width: 35%;
-    padding-left: 8%;
-    h2 {
-        font-size: 40px;
-    }
-    h4 {
-        font-size: 15px;
-    }
-    p {
-        font-size: 10px;
-        width: 100%;
-        padding-top: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .item, .project {
+    height: 120vh;
   }
-  #my-face {
-    img {
-      width: 230px;
-    }
-  }
-  .about__me__grid {
-    grid-template-columns: repeat(2, 170px);
-    grid-template-rows: repeat(2, 100px);
-    row-gap: 10px;
-    column-gap: 10px;
-    .grid__item {
-      .small__title {
-        font-size: 10px;
-      }
-      .paragraph {
-        font-size: 7px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 560px) {
   .desktop {
     display: none;
   }
@@ -531,11 +570,119 @@ $purpleColor: #F0F1FA;
   }
   .right-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 90%;
-    height: 70vh;
+    height: 45vh;
   }
   .about-me {
+    width: 70%;
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+      padding-top: 1px;
+      font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+        width: 100%;
+        padding-top: 10px;
+    }
+  }
+  #my-face {
+    img {
+      width: 270px;
+    }
+  }
+  .about__me {
+    .title { 
+      @include titleDesign(50px, 70px, 20px, 10px); 
+    }
+  }
+  .about__me__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about__me__grid {
+    padding-top: 60px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 160px);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .project {
+    .title { 
+      @include titleDesign(50px, 0px, 20px, 10px); 
+    }
+  }
+  .project__list {
+    grid-template-columns: repeat(1, 0.65fr);
+    grid-template-rows: repeat(5, 190px);
+    justify-content: center;
+  }
+
+  .footer__container {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 45vh;
+  }
+  .about-me {
+    height: 120vh;
+    width: 70%;
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+      padding-top: 1px;
+      font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+        width: 100%;
+        padding-top: 10px;
+    }
+  }
+  #my-face {
+    img {
+      width: 270px;
+    }
+  }
+  .about__me {
+    height: 125vh;
+  }
+  .about__me__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about__me__grid {
+    padding-top: 60px;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(4, 160px);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .right-container {
+    width: 90%;
+    height: 50vh;
+    row-gap: 50px;
+  }
+  .about-me {
+    height: 120vh;
     width: 70%;
     h2 {
         font-size: 30px;
@@ -545,112 +692,276 @@ $purpleColor: #F0F1FA;
       font-size: 15px;
     }
     p {
-        font-size: 12px;
+        font-size: 13px;
         width: 100%;
         padding-top: 10px;
     }
   }
   #my-face {
     img {
-      width: 250px;
+      width: 200px;
     }
   }
-
+  .about__me {
+    height: 135vh;
+  }
   .about__me__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
-  .about__me__grid {
-    padding-top: 30px;
-    grid-template-columns: repeat(2, 12rem);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
+
+  .project {
+    .title { 
+      @include titleDesign(50px, 0px, 20px, 10px); 
+    }
   }
   .project__list {
-    grid-template-columns: repeat(1, 0.7fr);
-    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(1, 0.65fr);
+    grid-template-rows: repeat(5, 150px);
     justify-content: center;
+    h4 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 10px;
+    }
+    img {
+      width: 20px;
+    }
   }
 
   .footer__container {
-    margin-top: 100px;
+    margin-top: 150px;
   }
-}
 
-@media screen and (max-width: 460px) {
-  .footer__item {
-    justify-content: space-between;
-  }
-  .footer__img {
-    img {
-      width: 80px;
+
+  .footer__social {
+    h4 {
+      display: none;
     }
   }
-  h2 {
-    font-size: 13px;
-  }
-  h4 {
-    font-size: 8px;
-  }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 400px) {
+  .about-me {
+    height: 120vh;
+    width: 70%;
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+      padding-top: 1px;
+      font-size: 15px;
+    }
+    p {
+        font-size: 13px;
+        width: 100%;
+        padding-top: 10px;
+    }
+  }
+  #my-face {
+    img {
+      width: 200px;
+    }
+  }
+  .about__me {
+    height: 180vh;
+  }
   .about__me__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
-  .about__me__grid {
-    padding-top: 30px;
-    grid-template-columns: repeat(2, 10rem);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
+
+  .project {
+    .title { 
+      @include titleDesign(50px, 0px, 20px, 10px); 
+    }
+  }
+  .project__list {
+    grid-template-columns: repeat(1, 0.65fr);
+    grid-template-rows: repeat(5, 150px);
+    justify-content: center;
+    h4 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 10px;
+    }
+    img {
+      width: 20px;
+    }
+  }
+  .item, .project {
+    height: 150vh;
+  }
+
+  .footer__container {
+    margin-top: 150px;
+  }
+
+
+  .footer__social {
+    h4 {
+      display: none;
+    }
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1401px) {
+  .item, .project {
+    height: 100vh;
+  }
+  .desktop {
+      font-size: 20px;
+  }
+  .social-media {
+    img {
+      width: 40px;
+    }
+  }
   .about-me {
-      width: 25%;
-      padding-left: 15%;
+      width: 30%;
+      padding-left: 10%;
       padding-bottom: 60px;
       h2 {
-          font-size: 60px;
+          font-size: 90px;
       }
       h4 {
-          font-size: 25px;
+          font-size: 40px;
       }
       p {
-          font-size: 13px;
+          font-size: 20px;
           width: 80%;
           padding-top: 20px;
       }
   }
+  #my-face {
+    img {
+      width: 600px;
+    }
+  }
+
+  .about__me {
+    height: 100vh;
+  }
+  
   .about__me__grid {
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(2, 180px);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 230px);
     row-gap: 10px;
     column-gap: 10px;
   }
 
   .title { 
-    @include titleDesign(50px, 70px, 22px, 11px); 
+    @include titleDesign(50px, 0px, 30px, 15px); 
   }
 
   .project__list {
     grid-template-columns: repeat(3, 0.4fr);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-rows: repeat(2, 300px);
   }
-
+  .tech-stack {
+    img {
+      width: 40px;
+    }
+  }
   .front-end-content, .back-end-content {
     img {
       width: 40px;
+    }
+  }
+
+  .footer__img {
+    img {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .desktop {
+      font-size: 25px;
+  }
+  .social-media {
+    img {
+      width: 50px;
+    }
+  }
+  .about-me {
+      width: 30%;
+      padding-left: 10%;
+      padding-bottom: 60px;
+      h2 {
+          font-size: 120px;
+      }
+      h4 {
+          font-size: 50px;
+      }
+      p {
+          font-size: 30px;
+          width: 80%;
+          padding-top: 20px;
+      }
+  }
+  #my-face {
+    img {
+      width: 800px;
+    }
+  }
+
+  .about__me {
+    height: 100vh;
+  }
+
+  .about__me__list {
+    img {
+      width: 400px;
+    }
+  }
+  .about__me__grid {
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(2, 350px);
+    text-align: center;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .small__title {
+    font-size: 30px;
+  }
+  .paragraph {
+    font-size: 20px
+  }
+  .title { 
+    @include titleDesign(50px, 0px, 40px, 25px); 
+  }
+
+  .project__list {
+    grid-template-columns: repeat(3, 0.6fr);
+    grid-template-rows: repeat(2, 400px);
+  }
+  .project-description {
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .item, .project {
+    height: 100vh;
+  }
+
+  .tech-stack {
+    img {
+      width: 60px;
+    }
+  }
+  .front-end-content, .back-end-content {
+    img {
+      width: 60px;
     }
   }
 
