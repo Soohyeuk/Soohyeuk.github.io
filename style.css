@@ -78,28 +78,6 @@ li {
     .header__list .header__list__container .header__list-left-item {
       padding-top: 7px; }
 
-.menu-links {
-  width: 100%;
-  max-height: 0;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center; }
-  .menu-links span {
-    width: 100%;
-    height: 10px;
-    display: block; }
-
-.menu-links.open {
-  display: block; }
-
-.menu-links {
-  display: none; }
-
-.mobile {
-  cursor: pointer; }
-
 /*nav bar ends*/
 /*intro-bar*/
 .intro-bar {
