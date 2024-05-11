@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/main_logo-white.svg"/>
+    <link rel="stylesheet" href="final.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soohyeuk Choi | Software Engineer</title>
+  </head>
+  <header>
+    <div class="header__list">
+      <div class="header__list__container">
+        <div class="header__list-left-item">
+          <a href=""><img src="images/main_logo-white.svg" alt="" class="images"></a>
+        </div>
+        <div class="desktop">
+          <li><a href="#project">Works</a></li>
+          <li onclick="window.open('./images/for-website-resume.pdf')">Resume</li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="mobile">
+          <img src="./images/hamburger.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section class="intro-bar">
+      <div class="intro-bar__container">
+        <div class="social-media">
+          <img id="d" src="images/linkedin-logo.svg" alt="link to my linkedin"  onclick="window.open('https://www.linkedin.com/in/soohyeuk-choi-78a956246/')">
+          <img src="images/github-logo.svg" alt="link to my github" onclick="window.open('https://github.com/soohyeuk')">
+          <img src="images/x-logo.svg" alt="link to my x" onclick="window.open('https://twitter.com/soohyeukk')">
+        </div>
+        <div class="right-container">
+          <div class="about-me bounces">
+            <h2>Soohyeuk Choi</h2>
+            <h4>CS student @ NYU</h4>
+            <p>Welcome! I am a Software Engineer from NYC, United States, working as a full-stack developer intern at Power Changes Lives and an IBM Z Ambassador.
+            </p>
+          </div>
+          <div id="my-face">
+            <img src="images/my-face.svg" alt="" class="bounces">
+          </div>
+        </div >
+      </div>
+    </section>
+
+    <section class="about__me">
+      <div class="title"> 
+        <div><h4>Get To Know More</h4></div>
+        <div><h2>About me</h2></div>
+      </div>
+      <div class="about__me__list">
+        <img src="https://placehold.co/200x250" alt="" class="animate1 portrait">
+          <div class="about__me__grid">
+            <div class="grid__item animate2">
+              <div class="small__title">
+                <h4>Academics</h4>
+              </div>
+              <div class="paragraph">
+                <p>B.S in CS @ NYU</p>
+                <p>Minor in Math & Integrated Design and Media</p>
+                <p>Pursuing BS/MS track in CS</p>
+                <p>Expected Graudation: May, 2026</p>
+              </div>
+            </div>
+            <div class="grid__item animate2">
+              <div class="small__title">
+                <h4>Experiences</h4>
+              </div>
+              <div class="paragraph">
+                <p>Summer Intern @ Cipher Mining</p>
+                <p>Full-stack developer intern @ PCL LLC.</p>
+                <p>IBM Z Ambassador (z/os mainframe)</p>
+              </div>
+            </div>
+            <div class="grid__item animate2">
+              <div class="small__title">
+                <h4>Front-end Development</h4>
+              </div>
+              <div class="front-end-content">
+                <img src="/images/frontend-img/html-logo.svg" alt="" >
+                <img src="/images/frontend-img/css-logo.svg" alt="" >
+                <img src="/images/frontend-img/sass-logo.svg" alt="" >
+                <img src="/images/frontend-img/js-logo.svg" alt="" >
+                <img src="/images/frontend-img/react-logo.svg" alt="" >
+              </div>
+            </div>
+            <div class="grid__item animate2">
+              <div class="small__title">
+                <h4>Back-end Development</h4>
+              </div>
+              <div class="back-end-content">
+                <img src="/images/backend-img/py-logo.svg" alt="" >
+                <img src="/images/backend-img/django-logo.svg" alt="" >
+                <img src="/images/backend-img/sqlite-logo.svg" alt="" >
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <div class="title">
+        <h4 class="browse">Browse My Recent</h4>
+        <h2>Projects</h2>
+      </div>
+      <div class="item">
+        <div class="project__list  animate1">
+          <div class="project__list__item">
+            <div class="project-description">
+              <h4>Note App</h4>
+              <p>This is one of the first project I created. It used Django and ReactJS to create a note app. </p>
+            </div>
+            <div class="tech-stack">
+              <img src="images/frontend-img/html-logo.svg" alt="" >
+              <img src="images/frontend-img/css-logo.svg" alt="" >
+              <img src="images/frontend-img/react-logo.svg" alt="" >
+              <img src="images/backend-img/django-logo.svg" alt="" >
+              <img src="images/backend-img/sqlite-logo.svg" alt="" >
+            </div>
+          </div>
+          
+          <div class="project__list__item">
+            <div class="project-description">
+              <h4>Twitter-clone</h4>
+              <p> It is a twitter clone app using ReactJS and Firebase. It has realtime update, authentication, and post on a feed features.</p>
+            </div>
+            <div class="tech-stack">
+              <img src="images/frontend-img/html-logo.svg" alt="" >
+              <img src="images/frontend-img/css-logo.svg" alt="" >
+              <img src="images/frontend-img/react-logo.svg" alt="" >
+              <img src="images/backend-img/firebase-logo.svg" alt="" >
+            </div>
+          </div>
+  
+          <div class="project__list__item">
+            <div class="project-description">
+              <h4>Scraping a website</h4>
+              <p>Scraping a website using Python and BeautifulSoup. It scraps the job title, description, location, and more and export it to an Excel sheet.</p>
+            </div>
+            <div class="tech-stack">
+              <img src="images/frontend-img/html-logo.svg" alt="" >
+              <img src="images/backend-img/py-logo.svg" alt="" >
+            </div>
+          </div>
+          <div class="project__list__item">
+            <div class="project-description">
+              <h4>Portfolio</h4>
+              <p>Created a porfolio of myself using HTML, SASS, JavaScript.</p>
+            </div>
+            <div class="tech-stack">
+              <img src="images/frontend-img/html-logo.svg" alt="" >
+              <img src="images/frontend-img/sass-logo.svg" alt="" >
+              <img src="images/frontend-img/js-logo.svg" alt="" >
+            </div>
+          </div>
+          <div class="project__list__item">
+            <div class="project-description">
+              <h4>E20 Assembly Language Processor</h4>
+              <p>Designed & Implemented an Assembly Language processor, E20, along with 2-layer cache implementation.</p>
+            </div>
+            <div class="tech-stack">
+              <img src="images/cpp-logo.svg" alt="" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer id="contact">
+    <div class="footer__container">
+      <div class="footer__item">
+        <div class="footer__left">
+          <div class="footer__img"><img src="/images/main_logo-white.svg" alt=""></div>
+          <div class="footer__contact">
+            <h2>CONTACT:</h2>
+            <h4>soohyeuk0816@gmail.com</h4>
+        </div>
+        </div>
+        <div class="footer__social">
+          <div class="social__item">
+            <h4>LinkedIn:</h4>
+            <img id="d" src="images/linkedin-logo.svg" alt="link to my linkedin"  onclick="window.open('https://www.linkedin.com/in/soohyeuk-choi-78a956246/')">
+          </div>
+          <div class="social__item">
+            <h4>GitHub:</h4>
+            <img src="images/github-logo.svg" alt="link to my github" onclick="window.open('https://github.com/soohyeuk')">
+          </div>
+          <div class="social__item">
+            <h4>Twitter:</h4>
+            <img src="images/x-logo.svg" alt="link to my x" onclick="window.open('https://twitter.com/soohyeukk')">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</html>
