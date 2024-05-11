@@ -221,7 +221,7 @@ li {
     width: 35px;
     cursor: pointer; }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 769px) {
   .desktop {
     display: flex;
     column-gap: 50px; }
@@ -236,7 +236,7 @@ li {
         text-decoration-thickness: 1.5px;
         text-underline-offset: 0.3rem; }
 
-  .mobile {
+  .mobile, .menu-links {
     display: none; } }
 @media screen and (max-width: 1400px) {
   .item, .project {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="images/main_logo-white.svg"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="final.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soohyeuk Choi | Software Engineer</title>
   </head>
@@ -18,10 +18,18 @@
           <li onclick="window.open('./images/for-website-resume.pdf')">Resume</li>
           <li><a href="#contact">Contact</a></li>
         </div>
-        <div class="mobile">
+        <div class="mobile" onclick="toggleMenu()">
           <img src="./images/hamburger.svg" alt="">
         </div>
       </div>
+    </div>
+    <div class="menu-links">
+      <li><a href="#project" onclick="toggleMenu()">Works</a></li>
+      <span></span>
+      <li onclick="window.open('./images/for-website-resume.pdf')">Resume</li>
+      <span></span>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <span></span>
     </div>
   </header>
   <body>
